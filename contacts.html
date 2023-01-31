@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Contacts</title>
+    <style>
+        p {
+          line-height: 1.5;
+        }
+        .form-group {
+            margin-bottom: 1.5em;
+        }
+      </style>
+      
+</head>
+<body>
+   <h1>My Contacts</h1>
+   <ul>
+    <li>Mobile: 0425 750 808</li>
+    <li>Email: yingying.sun214@gmail.com</li>
+    <li>Address: unit 4, 9-11 Kitchener Rd, Artarmon, NSW 2064</li>
+   </ul>
+
+   
+    <form class="" action="mailto:syy214@wechat.com" method="post" enctype="text/plain">
+        <div class="form-group">
+            <label for="name">Your name:</label>
+            <input type="text" id="name" name="name">
+            <input type="color" id="color" name="head" value="#f6b73c">
+            <label for="color">Color</label>
+            <br>
+            <label for="password">Password</label>
+            <input type="password" id="password" value="">
+            <br>
+            <fieldset>
+                <legend> Choose your interests</legend>
+                <div>
+                    <input type="checkbox" id="coding" name="interest" value="coding">
+                    <label for="coding">Coding</label>
+                </div>
+                <div>
+                    <input type="checkbox" id="music" name="interest" value="music">
+                    <label for="music">Music</label>
+                </div>
+            </fieldset>
+        </div>
+        <div>
+            <label for="start">Start Date</label>
+            <input type="date" id="start" name="trip-start" value="2018-07-22" min="2018-01-11" max="2018-12-31">
+            <br>
+            <label for="email">Enter your gmail:</label>
+            <input type="email" id="email" patter=".+@gmail.com" size="30">
+            <br>
+            <label for="avatar">Choose a profile picture:</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg">
+            <br>
+            <label for="start">Start Month:</label>
+            <input type="month" id="start" nmae="start" min="2018-03" value="2018-05">
+            <br>
+            <label for="tentacles">Number of tentacles (10 - 100):</label>
+            <input type="number" id="tentacles" name="tentacles" min="10" max="100">
+        </div>
+        <br>
+        <div>
+            <fieldset>
+                <legend>Select a maintenance drone:</legend>
+                <div>
+                    <input type="radio" id="huey" name="drone" value="huey" checked>
+                    <label for="huey">Huey</label>
+                </div>
+                <div>
+                    <input type="radio" id="dewey" name="drone" value="dewey">
+                    <label for="dewey">Dewey</label>
+                </div>
+                <div>
+                    <input type="radio" id="louie" name="drone" value="louie">
+                    <label for="louie">Louie</label>
+            </fieldset>
+        </div>
+        <br>
+
+        <p>Audio settings:</p>
+        <div>
+            <input type="range" id="volume" name="volume" min="0" max="11">
+            <label for="volume">Volume</label>
+        </div>
+        <div>
+            <input type="range" id="cowbell" name="cowbell" min="0" max="100" value="20" step="10">
+            <label for="cowbell">Cowbell</label>
+        </div>
+        <br>
+        <label for="site-search">Search the site:</label>
+        <input type="search" id="site-search" name="q">
+        <button>Search</button>
+        <br>
+        <input type="submit" value="Send Request">
+        <br>
+        <label for="phone">Enter your phone number:</label>
+        <input type="tel" id="phone" name="phone" patter="[0-9]{3}-[0-9]{3}-[0-9]{4}">
+        <small>Format: 123-456-7890</small>
+        <br>
+        <hr>
+        <label>Your message:</label>
+        <br> 
+        <textarea name="message" rows="10" cols="30"></textarea>
+        <input type="submit" name="">
+
+
+    </form>
+</body>
+</html>
